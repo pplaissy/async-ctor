@@ -14,6 +14,6 @@ export class AsyncElementVM {
 
     async loadData(): Promise<void> {
         // say loading data takes 3 secs
-        return new Promise((resolve) => setTimeout(() => resolve(), 3000));
+        return await new Promise((resolve) => setTimeout(() => resolve(), 3000));
     }
 }
